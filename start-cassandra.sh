@@ -1,4 +1,4 @@
-# checking if cassandra is present
+    # checking if cassandra is present
     if [ ! -d dsc-cassandra-2.2.3 ] & [ ! -d datastax-agent-5.2.2 ] & [ ! -d opscenter-5.2.2 ] ; then
     echo "files not found, grabbing paclages"
     # download dsc
