@@ -1,6 +1,7 @@
     # checking if cassandra is present
     if [ ! -d dsc-cassandra-2.2.3 ] & [ ! -d datastax-agent-5.2.2 ] & [ ! -d opscenter-5.2.2 ] ; then
-    echo "files not found, grabbing paclages"
+    echo "files not found, grabbing packages"
+
     # download dsc
     curl -L http://downloads.datastax.com/community/dsc-cassandra-2.2.3-bin.tar.gz | tar xz
 
