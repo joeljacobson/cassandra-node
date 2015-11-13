@@ -36,4 +36,5 @@ sleep 3
 echo 'adding node via opscenter api'
 curl -X POST http://127.0.0.1:8888/cluster-configs -d '{"cassandra": {"seed_hosts": "localhost"}, "cassandra_metrics": {}, "jmx": {"port": "7199"}}' &> /dev/null
 
-echo 'opscenter is running on 127.0.0.1:8888' 
+echo 'opscenter is running on 127.0.0.1:8888'
+python -mwebbrowser http://127.0.0.1:8888 
